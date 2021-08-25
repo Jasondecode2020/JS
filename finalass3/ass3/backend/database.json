@@ -1,0 +1,509 @@
+{
+  "admins": {
+    "hayden@unsw.edu.au": {
+      "name": "hayden1",
+      "password": "1234",
+      "sessionActive": true
+    },
+    "hayden@": {
+      "name": "hayden3",
+      "password": "12345",
+      "sessionActive": true
+    },
+    "hayden@unsw": {
+      "name": "hayden2",
+      "password": "12345",
+      "sessionActive": true
+    },
+    "hayden@a": {
+      "name": "hayden3",
+      "password": "12345",
+      "sessionActive": true
+    },
+    "hayden@aa": {
+      "name": "Jim1",
+      "password": "12345",
+      "sessionActive": true
+    },
+    "hayden@aaa": {
+      "name": "Jim1",
+      "password": "12345",
+      "sessionActive": true
+    },
+    "hayden@aaa1": {
+      "name": "Jim111",
+      "password": "12345",
+      "sessionActive": true
+    },
+    "jason@unsw.edu.au1": {
+      "name": "jason@@",
+      "password": "1234",
+      "sessionActive": true
+    },
+    "zzj@gmail.com": {
+      "name": "jason@@@",
+      "password": "1234",
+      "sessionActive": true
+    }
+  },
+  "quizzes": {
+    "537691491": {
+      "name": "My first quiz2",
+      "owner": "hayden@unsw.edu.au",
+      "questions": [],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-04T08:21:44.069Z"
+    },
+    "588806974": {
+      "name": "My first quiz",
+      "owner": "hayden@unsw.edu.au",
+      "questions": [],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-04T08:20:38.460Z"
+    },
+    "619329796": {
+      "name": "My first quiz1",
+      "owner": "hayden@unsw.edu.au",
+      "questions": [],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-04T08:21:28.757Z"
+    },
+    "641858150": {
+      "name": "QuizName",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": "3",
+          "ask": "What the largest mammal?vv",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 2741,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 9553,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger8888",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 2712,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        }
+      ],
+      "thumbnail": "thumbnail",
+      "active": null,
+      "createdAt": "2021-04-12T03:27:58.688Z"
+    },
+    "710261235": {
+      "name": "nnm",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": 5713,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 1479,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 9600,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 9600,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        }
+      ],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T17:51:18.574Z"
+    },
+    "855431057": {
+      "name": "name a ",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": 2433,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        }
+      ],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T12:18:12.527Z"
+    },
+    "861918745": {
+      "name": "name",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": 3420,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 3420,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        }
+      ],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T04:30:09.850Z"
+    },
+    "865760314": {
+      "name": "cv2",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": 3582,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        }
+      ],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T13:16:40.767Z"
+    },
+    "899421179": {
+      "name": "name",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": 8785,
+          "ask": "What the largest mammal?",
+          "timing": 10,
+          "answers": [
+            {
+              "id": "1",
+              "answer": "Elephant1",
+              "isCorrect": false
+            },
+            {
+              "id": "2",
+              "answer": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "id": "3",
+              "answer": "people",
+              "isCorrect": false
+            },
+            {
+              "id": "4",
+              "answer": "tiger",
+              "isCorrect": false
+            }
+          ]
+        }
+      ],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T12:18:23.931Z"
+    },
+    "914509536": {
+      "name": "game new2",
+      "owner": "zzj@gmail.com",
+      "questions": [],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T12:25:53.672Z"
+    },
+    "939079156": {
+      "name": "fquiz8",
+      "owner": "zzj@gmail.com",
+      "questions": [],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2021-04-11T11:31:49.202Z"
+    },
+    "965707459": {
+      "name": "My first quiz",
+      "owner": "zzj@gmail.com",
+      "questions": [
+        {
+          "id": 1
+        }
+      ],
+      "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+      "active": null,
+      "createdAt": "2021-04-08T05:48:58.759Z"
+    }
+  },
+  "sessions": {}
+}
