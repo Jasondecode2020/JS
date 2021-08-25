@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 4</title>
+    <meta charset="utf-8" />
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 400px;
+            grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+            grid-template-areas: 
+                "street street_name"
+                "suburb suburb_name"
+                "postcode postcode_number"
+                "date date_birth"
+                "building build_type"
+                "features1 feature_type1"
+                "features2 feature_type2"
+                "features3 feature_type3"
+                "features4 feature_type4"
+                "features5 feature_type5";
+            align-items: stretch;
+            gap: 2px 2px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 612px;
+        }
+        .street {
+            grid-area: street;
+        }
+        .street_name {
+            grid-area: street_name;
+        }
+        .suburb {
+            grid-area: suburb;
+        }
+        .suburb_name {
+            grid-area: suburb_name;
+        }
+        .postcode {
+            grid-area: postcode;
+        }
+        .postcode_number {
+            grid-area: postcode_number;
+        }
+        .date {
+            grid-area: date;
+        }
+        .date_birth {
+            grid-area: date_birth;
+        }
+        .building {
+            grid-area: building;
+        }
+        .build_type {
+            grid-area: build_type;
+        }
+        .features3 {
+            grid-area: features3;
+        }
+        .feature_type1 {
+            grid-area: feature_type1;
+        }
+        .feature_type2 {
+            grid-area: feature_type2;
+        }
+        .feature_type3 {
+            grid-area: feature_type3;
+        }
+        .feature_type4 {
+            grid-area: feature_type4;
+        }
+        .feature_type5 {
+            grid-area: feature_type5;
+        }
+    </style>
+  </head>
+  <body>
+    <form>  
+        <div class="container" > 
+            <div class="street" id="street">Street Name</label>
+            </div>
+            <div class="street_name">
+                <input type="text" name="street" id="street_input" size="55px" placeholder="length: 3-50">
+            </div>
+            <div class="suburb" id="suburb">Suburb</div>
+            <div class="suburb_name">
+                <input type="text" name="suburb" id="suburb_input" size="55px" placeholder="length: 3-50">
+            </div>
+            <div class="postcode">Postcode</div>
+            <div class="postcode_number" id="post">
+                <input type="text" id="post_input" pattern="\d{4}" placeholder="4 digits" size="55px">
+            </div>
+            <div class="date">Date of birth</div>
+            <div class="date_birth" id="date">
+                <input type="text" name="date" id="date_input" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" 
+                placeholder="DD/MM/YY" size="55px">
+            </div>
+            <div class="building">Building Type</div>
+            <div class="build_type">
+                <select name="building" id="selection" onchange=buildingChange()>
+                    <option class="type">Apartment</option>
+                    <option class="type">House</option>
+                </select>
+            </div>
+            <div class="features3">Features</div>
+            <div class="feature_type1">
+                
+                <input type="checkbox" id="heating" name="answer" value="Heating" 
+                onchange=featuresChange()> <label for="heating">Heating</label>
+            </div>
+            <div class="feature_type2">
+                <input type="checkbox" id="air_conditioning" name="answer" value="AirConditioning" 
+                onchange=featuresChange()> <label for="air_conditioning">AirConditioning</label>
+            </div>
+            <div class="feature_type3">
+                <input type="checkbox" id="pool" name="answer" value="Pool" 
+                onchange=featuresChange()> <label for="pool">Pool</label>
+            </div>
+            <div class="feature_type4">
+                <input type="checkbox" id="sand_pit" name="answer" value="Sandpit" 
+                onchange=featuresChange()> <label for="sand_pit">Sandpit</label>
+            </div>
+            <div class="feature_type5">
+                <input type="button" value="Select All" id="btn" onClick="toggle(this)">
+            </div>
+        </div>
+    <br/>
+    <div>
+        <input type="button" value="Reset" id="btn-reset" onclick="reset(this); afterReset()">
+    </div>
+    <br />
+    <textarea class= "text" id = "text" rows="10px" cols="82px"></textarea>
+    </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

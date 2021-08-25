@@ -1,0 +1,235 @@
+* {
+    box-sizing:border-box;
+  }
+  
+body {
+    font-family: Arial;
+    background-color: #f8f8f8;
+    color: #000037;
+    width: 100%;
+    height: 1470px;
+    /* border: 1px solid red; */
+    padding: 0px 380px;
+    /* @media screen and (max-width: 1000px) {
+        body {
+            width: 417px;
+            height: 3195px;
+        }
+    } */
+}
+
+h2 {
+    font-size: 35pt;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    /* height: 140px;
+    border: 1px solid red; */
+}
+
+.container {
+    padding: 100px 0;
+}
+
+.container2 {
+    margin-top: 820px;
+}
+
+img {
+    display: flex;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+.first-line {
+    font-size: 25px;
+    text-align: center;
+}
+
+.second-line {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 155%;
+}
+
+.left {
+    padding:20px;
+    float:left;
+    height: 405px;
+    width:33.3%; /* The width is 20%, by default */
+}
+
+.left:hover {
+    opacity: 0.5;
+}
+
+.middle {
+    padding:20px;
+    float:left;
+    height: 405px;
+    width:33.3%; 
+}
+
+.middle:hover {
+    opacity: 0.5;
+}
+
+.right {
+    padding:20px;
+    float:left;
+    height: 405px;
+    width:33.3%; 
+}
+
+.right:hover {
+    opacity: 0.5;
+}
+
+.bottom-left {
+    background-color: #ffff70;
+    float:left;
+    height: 215px;
+    width:56%; /* The width is 20%, by default */
+}
+
+.bottom-middle {
+    background-color: #ffff70;
+    float:left;
+    height: 215px;
+    width:22%; /* The width is 60%, by default */
+    padding-left: 30px;
+}
+
+.bottom-right {
+    background-color: #ffff70;
+    float: left;
+    height: 215px;
+    width: 22%; /* The width is 20%, by default */
+    padding-right: 30px;
+}
+
+.img-apple {
+    margin: 0 auto;
+    margin-top: 110px; 
+    width: 95%; 
+    height: 25%;
+}
+
+.img-google {
+    /* margin: 0 auto; */
+    margin-top: 110px; 
+    width: 95%; 
+    height: 25%;
+}
+
+#bottom-0 {
+    font-size: 42px;
+    line-height: 30%;
+    padding: 0 40px;
+}
+
+#bottom-1 {
+    font-size: 20px;
+    line-height: 140%;
+    padding: 0 40px;
+}
+
+span {
+    background-color: #8e42ff;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+span:hover {
+    opacity: 0.7;
+}
+
+#bottom-2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30%;
+    padding: 0 40px;
+}
+
+/* Use a media query to add a break point at 419px: */
+@media only screen and (max-width:419px) {
+    .left, .middle, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .bottom-left, .bottom-middle, .bottom-right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    body {
+        width: 417px;
+        height: 3195px;
+        padding: 0px;
+    }
+    h2 {
+        font-size: 25pt;
+        padding: 10px 20px 0px 20px;
+        line-height: 120%;
+        font-weight: bold;
+
+    }
+    .bottom-left {
+        height: 300px;
+        padding: 0;
+    }
+    
+    .bottom-middle {
+    height: 85px;
+    }
+    
+    .bottom-right {
+    height: 90px;
+    }
+    .container2 {
+        margin-top: 2550px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .img-apple {
+        margin: 0 auto;
+        margin-left: 70px;
+        width: 50%; 
+        height: 70%;
+        margin-top: 5px;
+    }
+
+    .img-google {
+        margin: 0 auto;
+        margin-left: 100px;
+        width: 50%; 
+        height: 70%;
+        margin-top: 5px;
+    }
+
+    #bottom-0 {
+        font-size: 50px;
+        line-height: 60%;
+        text-align: center;
+        padding: 0 40px;
+    }
+    
+    #bottom-1 {
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        padding: 0 60px;
+    }
+    
+    #bottom-2 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30%;
+        text-align: center;
+        padding: 0 50px;
+    }
+    
+}

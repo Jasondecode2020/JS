@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica;
+    font-weight: normal;
+    font-size: 19px;
+    background-color: #fefefe;
+    width: 1219px;
+    height: 883px;
+    line-height: 150%;
+    padding: 8px 14px 8px 18px;
+    /* border: 1px solid blue;  */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* background: red; */
+    width: 100%;
+    height: 167px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.paragraph1 {
+    background: white;
+    padding-left: 35px;
+    margin: 1px;
+    width: 850px;
+    height: 165px;
+}
+
+.information {
+    background: #eeeeee;
+    margin: 1px;
+    width: 310px;
+    height: 160px;
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 70%;
+}
+
+.koala {
+    font-size: 16px;
+    line-height: 80%;
+}
+
+#scene {
+    font-size: 30px;
+    width: 250px;
+    height: 50px;
+    background-color: #f3cd4a;
+    text-align: center;
+    line-height: 52px;
+    margin-top: 45px;
+}
+
+.container2 {
+    margin-left: 35px;
+    margin-top: 45px;
+}
