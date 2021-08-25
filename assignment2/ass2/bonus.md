@@ -1,0 +1,1 @@
+I made the very detailed button design and error fetch up design. Don't need to fresh and logout to check each function, each action of button has a close loop. Different regions with different button, for profile, it is in the header, for update and delete, it is near the post area.

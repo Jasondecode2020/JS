@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quickpic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure, you can modify this as much as you choose --> 
+    <header class="banner">
+        <h1>Quickpic</h1>
+        <ul class="nav" id="nav">
+            <button class="nav-item" id="update-profile" style="display: none">UpdateProfile</button> 
+            <button class="nav-item" id="add-post" style="display: none">Add Post</button> 
+            <button class="nav-item" id="follow" style="display: none">Follow</button>
+            <button class="nav-item" id="unfollow" style="display: none">Unfollow</button>
+            <button class="nav-item" id="show-posts" style="display: none">Users</button>
+            <button class="nav-item" id="my-page" style="display: none">My Page</button>
+            <button class="nav-item" id="btn-0" style="display: none">Logout</button>
+        </ul>
+    </header>
+    <main role="main">
+        
+        <!-- app goes here --> 
+        <div id="show-feed-posts">
+            <div id="follow-popout" hidden>Username:
+                <input type="text" placeholder="username" id="follow-input">
+                <button id="follow-submit">Submit</button>
+                <span id="follow-success" hidden>Follow success!</span><button id="close-follow">Close</button>
+            </div>
+            <div id="unfollow-popout" hidden>Username:
+                <input type="text" placeholder="username" id="unfollow-input">
+                <button id="unfollow-submit">Submit</button>
+                <span id="unfollow-success" hidden>Unfollow success!</span><button id="close-unfollow">Close</button>
+            </div>
+            <div id="post-popout" hidden>
+                <div id="comment-text">Post text and png image</div><br />
+                <input type="textarea" placeholder="please type your post" id="post-input"><br /><br />
+                <label for="file1" id="forlable">Select an image: </label>
+                <input type="file" id="file1" name="imageFile" accept="image/png" />
+                <button id='upload'>Upload</button><span id='upload-success' hidden>Upload Success!</span><br />
+                <button id="post-submit">Submit</button>
+                <span id="post-success" hidden>Post success!</span><button id="close-post">Close</button>
+            </div>
+            <div id="update-post-popout" hidden>
+                <div id="update-comment-text">Please update post text and png image</div><br />
+                <input type="textarea" placeholder="please type your post" id="update-post-input"><br /><br />
+                <label for="file1" id="update-forlable">Select an image: </label>
+                <input type="file" id="update-file1" name="imageFile" accept="image/png" />
+                <button id='update-upload'>Upload</button><span id='update-upload-success' hidden>Update Upload Success!</span><br />
+                <button id="update-post-submit">Submit</button>
+                <span id="update-post-success" hidden>Update Post success!</span><button id="update-close-post">Close</button>
+            </div>
+            <div id="update-popout" hidden>
+                <div class = "text">Email</div>
+                <input placeholder="Email" type="text" name="email" id="email-mine"><br />
+                <div class = "text">Name</div>
+                <input placeholder="name" type="text" name="name" id="name-mine"><br />
+                <div class = "text">Password</div>
+                <input placeholder="password" type="password" name="password" id="password-mine"><br />
+                <button id="mine-submit">Submit</button>
+                <span id="mine-success" hidden>Update success!</span><button id="close-update">Close</button>
+            </div>
+            <div id="delete-popout" hidden>
+                <div class="text" id="delete-error">Delete success! Close the popout and click My Page to see the result!</div>
+                <button id="delete-close">Close</button>
+            </div>
+            <div id="comment-popout" hidden>
+                <div id="comment-header">Please add some comments</div><br />
+                <input type="textarea" placeholder="please input your comments" id="comment-input"><br /><br />
+                <button id="comment-submit">Submit</button>
+                <div id="comment-success" hidden>Comment success!</div>
+                <button id="close-comment">Close</button>
+            </div>
+        </div>
+        <div id="feedLogin">
+            <div id="changeTextFeed"></div>
+        </div>
+        <div class="container" id="container">
+            <h2 id="appTitle">Please Login!</h2> 
+            <form name="account">
+                <div class = "text">Username <span class="span-color">*</span></div>
+                <input placeholder="Username" type="text" name="name" id="username"><br />
+                <div class = "text">Password <span class="span-color">*</span></div> 
+                <input placeholder="please enter your password" type="password" id="password"><br />
+                <div class = "text">Confirm Password <span class="span-color">*</span></div> 
+                <input placeholder="confirm your password" type="password" id="password_2"><br />
+                <div id="passwordMatch">
+                    <div id="changeText">Please make sure your password match.</div>
+                    <button id="btn-1">Close</button>
+                </div>
+                <div id="emailAndName">
+                    <div class = "text">Email <span class="span-color">*</span></div>
+                    <input placeholder="Email" type="text" name="name" id="email"><br />
+                    <div class = "text">Name <span class="span-color">*</span></div> 
+                    <input placeholder="Name" type="text" name="name" id="name"><br />
+                    <div class="requiredField">* Required Fields</div>
+                    <input type="submit" value="Signup" id="btn-signup"></button>
+                </div>
+                <div id="changeLoginInformation">
+                    <div class="requiredField">* Required Fields</div>
+                    <input type="submit" value="Login" id ="loginButton" />
+                    <div class = "text">New user?</div>
+                    <input type="submit" value="Register" id ="registerButton" />
+                </div>
+                <div id="token"></div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <span id="show-pagination"></span>
+            <span>
+                <a id="first-page" href="#">First</a>
+                <a id="last-page" href="#">Previous</a>
+                <a id="next-page" href="#">Next</a>
+                <a id="end-page" href="#">End</a>
+            </span>
+        </nav>
+        <p>&copy; Quickpic</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
