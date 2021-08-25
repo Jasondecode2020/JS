@@ -1,0 +1,33 @@
+[
+    {
+        "id": "1",
+        "question_type": "single",
+        "score": 20,
+        "ask": "What is the largest mammal?",
+        "timing": 10,
+        "img_source": "",
+        "video_source": "",
+        "answers": [
+            {
+                "id": "1",
+                "answer": "Elephant",
+                "isCorrect": false
+            },
+            {
+                "id": "2",
+                "answer": "Blue Whale",
+                "isCorrect": true
+            },
+            {
+                "id": "3",
+                "answer": "people",
+                "isCorrect": false
+            },
+            {
+                "id": "4",
+                "answer": "tiger",
+                "isCorrect": false
+            }
+        ]
+    }
+]

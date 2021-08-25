@@ -1,0 +1,311 @@
+/* import font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+
+body,
+html,
+global-setting {
+  /* this font is overwritten by bootstrap */
+  font-family: "Nunito", sans-serif;
+  background-color: #f6f6f6;
+}
+
+/* -----------------------------------------------------------
+                          LOGIN 
+-----------------------------------------------------------*/
+.login-form,
+.signUp-form {
+  width: 300px;
+  height: 410px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bbe1fa;
+  padding: 15px;
+
+  border-radius: 5px;
+  margin: 30px auto;
+}
+
+.login-title,
+.signUp-title {
+  width: 180px;
+
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  color: #0f4c75;
+
+  border-radius: 8px;
+  margin: 30px auto;
+}
+
+.question-item {
+  width: 80vw;
+  margin-left: 40px;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: left;
+  color: #0f4c75;
+  border-radius: 8px;
+}
+
+.img-item {
+  width: 100pt;
+  height: 100pt;
+  border-radius: 8px;
+}
+
+.show-quiz {
+  width: 80vw;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border-radius: 8px;
+  margin: 10px 50px;
+  position: fixed;
+  background-image: linear-gradient(
+    30deg,
+    rgb(42, 102, 42),
+    rgb(52, 52, 78),
+    rgb(124, 95, 95)
+  );
+}
+/* -----------------------------------------------------------
+                          Dashboard 
+-----------------------------------------------------------*/
+.create-quiz-button {
+  width: 160px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.main-container {
+  background-color: #f6f6f6;
+}
+
+.content {
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 3px;
+}
+/* -----------------------------------------------------------
+                          Create Game 
+-----------------------------------------------------------*/
+.create-game-box {
+  width: 300px;
+  margin: 10px 0;
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* -----------------------------------------------------------
+                          Quiz 
+-----------------------------------------------------------*/
+/* This is the box contain all quiz */
+.all-quiz-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* single quiz box */
+.quiz-box {
+  width: 340px;
+
+  margin: 20px 0px 20px 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px #ccc;
+  position: relative;
+}
+
+.quiz-thumbnail-box {
+  height: 170px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.quiz-detail-box {
+  padding: 10px;
+}
+
+.quiz-title-box {
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.quiz-modify-box {
+  margin-top: 5px;
+}
+
+.quiz-modify-button {
+  width: 60px;
+  margin-right: 3px;
+}
+
+.quiz-advance-box {
+  width: 100%;
+}
+
+.quiz-advance-button {
+  height: 50px;
+  margin: 20px 0 35px 0;
+  width: 95%;
+}
+
+.quiz-start-button {
+  width: 95%;
+}
+
+/* -----------------------------------------------------------
+                          Edit Quiz 
+-----------------------------------------------------------*/
+.add-question-box {
+  color: #ffffff;
+}
+
+.add-form {
+  padding: 30px 0 30px 20px;
+  background-image: linear-gradient(
+    30deg,
+    rgb(42, 102, 42),
+    rgb(76, 76, 175),
+    rgb(129, 72, 72)
+  );
+}
+
+#add-question-input {
+  width: 350px;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100px;
+}
+
+.set-question {
+  margin: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.my-btn {
+  display: inline-block;
+  background: green;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.my-btn:focus {
+  outline: none;
+}
+
+.my-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.form-control input {
+  width: 50%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-set {
+  display: inline-block;
+}
+
+/* -----------------------------------------------------------
+                          Result
+-----------------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------------
+                          Join Game
+-----------------------------------------------------------*/
+.join-game-input-form {
+  width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #ffffff;
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.join-game-submit {
+  height: 55px;
+}
+
+/* -----------------------------------------------------------
+                          Play Game
+-----------------------------------------------------------*/
+.question-box {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+
+  background: linear-gradient(#e66465, #9198e5);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question-ask {
+  font-size: 30pt;
+  margin: 20px auto;
+}
+
+.answer-option {
+  border-radius: 5px;
+  border: 2px solid;
+  margin-bottom: 10px;
+}
+
+.answer-checkbox {
+  width: 30px;
+  height: 30px;
+  
+  margin: 5px;
+}
+
+.answer-text {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-left: 10px;
+}
+
+.answer-submit-button {
+  margin-top: 20px;
+  height: 70px;
+}

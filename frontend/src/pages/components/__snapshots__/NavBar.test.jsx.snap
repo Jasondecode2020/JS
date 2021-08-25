@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar renders with minimal props 1`] = `
+<a
+  className="nav-link"
+  href="/login"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  Log out
+</a>
+`;
